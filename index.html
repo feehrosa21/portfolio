@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img//imgs/icon.png">
+    <!-- site icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <!-- biblioteca de recursos jQuery -->
+    <script src="js/jquery-3.7.0.min.js"></script> 
+    <!-- efeito surgir -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/menu-port.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Portifólio</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <div class="logo">✿Fernanda Rosa</div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a href="#portifolio">Portifólio</a></li>
+            </ul>
+            <i class='bx bx-moon' id="mode"></i>
+            </div>
+
+            <!--menu hamburguer-->
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main tabindex="0" class="content" id="content"> <!-- id para quando o usuário clicar no conteúdo fechar o menu -->
+        <div class="canto-superior">
+            <img src="img//imgs/canto.png" alt="canto do site"> <!-- canto do site -->
+        </div>
+
+
+        <div class="circle"></div>
+
+        <section class="container-home" id="home">
+            <div class="home">
+                <div class="text-home">
+                    <h2>Olá! Bem vindo(a) Eu sou<br><span class="name">Fernanda Rosa</span></h2>
+                    <p>Estudante de Programação Web Full Stack e <br> UX/UI Design</p>
+                    <div class="nav-icon">
+                        <a href="https://www.instagram.com/feehrosa21/"><i class='bx bxl-instagram' id="redes"></i></a>
+                        <a href="https://www.linkedin.com/in/fernanda-rosa21"><i class='bx bxl-linkedin'
+                                id="redes"></i></a>
+                        <a href="https://github.com/feehrosa21"><i class='bx bxl-github' id="redes"></i></a>
+                    </div>
+                </div>
+                <div class="flor">
+                    <img src="img/imgs/florhome.png" alt="flor home">
+                </div>
+                <div class="img-home">
+                    <img src="img/imgs/fotohome.png" alt="Foto Fernanda Home">
+                </div>
+            </div>
+
+        </section>
+
+        <article id="sobre">
+            <div class="sobre">
+                <span id="quadrado"></span>
+                <div class="foto">
+                    <img src="img//imgs/foto.jpg" alt="Foto Fernanda">
+                </div>
+
+                <div class="text-sobre">
+                    <h2 class="h2">Sobre mim ✿</h2>
+                    <hr>
+                    <p>Eu sou a Fernanda Rosa e tenho 18 anos. Nasci e moro em Porto Alegre. Faço curso de Programação
+                        Web no Instituto de Oportunidade Social(IOS) e recentemente comecei o curso de UX/UI DESIGN no
+                        Instituto Caldeira através do Programa Nova Geração. Sou uma pessoa muito dedicada e gosto de
+                        pensar em cada detalhe do que vou fazer. Sou a pessoa que gosta de estar conversando, com amigos
+                        e ler livros que me fazem refletir sobre a vida. Sou muito organizada e adoro um planejamento.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <section class="habilidades">
+            <div class="icons-habilidades">
+                <div class="icon-icon"><i class='bx bx-bullseye' id="icon-h"></i>
+                    <div class="text-icon">
+                        <h4>Comprometimento</h4>
+                        <p>Sou muito comprometida e busco sempre tomar decisões responsáveise com consciência.</p>
+                    </div>
+                </div>
+
+                <div class="icon-icon"><i class='bx bx-check' id="icon-h"></i>
+                    <div class="text-icon">
+                        <h4>Organização</h4>
+                        <p>Acredito que a organização é fundamental em todas as áreas da vida e adoro um planejamento.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="icon-icon"><i class='bx bx-bulb' id="icon-h"></i>
+                    <div class="text-icon">
+                        <h4>Dedicação</h4>
+                        <p>Tenho em mim que com dedicação e esforço se vai longe. Por isso adoro pensar em cada detalhe
+                            dos meus projetos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portifolio" id="portifolio">
+            <div class="titulo-port">
+                <h3 class="h3">Portifólio ✿</h3>
+                <hr>
+            </div>
+
+            <div class="container-port">
+                <div class="port">
+                    <p>Confira alguns dos meus projetos desenvolvidos no curso de Programação Web Full Stack, no Instito
+                        de Oportnidade Social(IOS). Os demais, você encontra no meu GitHub.</p>
+                    <h4>Habilidades em desenvolvimento</h4>
+                    <div class="icons-study">
+                        <i class='bx bxl-css3' id="icon-s"></i>
+                        <i class='bx bxl-html5' id="icon-s"></i>
+                        <i class='bx bxl-javascript' id="icon-s"></i>
+                        <i class='bx bxl-php' id="icon-s"></i>
+                        <i class="fi fi-brands-mysql" id="icon-s"></i>
+                        <span>UX/UI <br> Design</span>
+                    </div>
+                </div>
+                <div class="img-port">
+                    <img src="img//imgs/programador.png" alt="programador">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="title-port">
+                <h4 class="h4">Conheça alguns dos meus projetos:</h4>
+                <hr>
+            </div>
+            <!-- inicio menu -->
+            <div class="menu-portifolio">
+                <ul>
+                    <li><a href="#tab1" class="link-a">HTML | CSS</a></li>
+                    <li><a href="#tab2" class="link-a">JavaScript</a></li>
+                    <li><a href="#tab3" class="link-a">Equipe</a></li>
+                    <li><a href="#tab4" class="link-a">PHP | Bootstrap | Pesquisa</a></li>
+                </ul>
+            </div> <!-- final menu -->
+        </section>
+
+        <section class="tab" id="tab1">
+            <div class="tab-container">
+                <div class="card item-1">
+                    <a href="https://feehrosa21.github.io/carrossel3D/"><img src="img/projetos/carrossel3d.jpg"
+                            alt="Carrossel 3D"></a>
+                    <div class="intro">
+                        <h2>Carrossel 3D</h2>
+                        <p>Clique e veja a beleza da arte nos pequenos detalhes.</p>
+                    </div>
+                </div>
+                <div class="card item-2">
+                    <a href="https://feehrosa21.github.io/flexegrid/"><img src="img/projetos/flexegrid.jpg" alt="Flex e Grid"></a>
+                    <div class="intro">
+                        <h2>Galeria de Outer Banks</h2>
+                        <p>Conheça um breve resumo sobre os personagens dessa série que eu gosto muito.</p>
+                    </div>
+                </div>
+                <div class="card item-3">
+                    <a href="https://feehrosa21.github.io/ladingpage-sallve/"><img src="img/projetos/sallve.jpg"
+                            alt="Ladding Page Sallve"></a>
+                    <div class="intro">
+                        <h2>Ladding Page Sallve</h2>
+                        <p>Conheça a Sallve, uma empresa especializada em produtos de skin care.</p>
+                    </div>
+                </div>
+                <div class="card item-4">
+                    <a href="https://feehrosa21.github.io/cardapio/"><img src="img/projetos/cardapio.jpg" alt="Cardápio"></a>
+                    <div class="intro">
+                        <h2>Cardápio</h2>
+                        <p>Um dos meus primeiros projetos, cardápio de um restaurante.</p>
+                    </div>
+                </div>
+                <div class="card item-5">
+                    <a href="https://feehrosa21.github.io/parallax-receitasnatalinas/"><img
+                            src="img/projetos/parallax.jpg" alt="Parallax"></a>
+                    <div class="intro">
+                        <h2>Parallax</h2>
+                        <p>Parallax sobre receitas natalinas.</p>
+                    </div>
+                </div>
+
+            </div> <!-- final da id tab1 -->
+        </section>
+
+        <section class="tab" id="tab2">
+            <div class="tab-container">
+                <div class="card item-1">
+                    <a href="https://feehrosa21.github.io/calculadora-imc/"><img src="img/projetos/calculadoraimc.jpg"
+                            alt="Calculadora IMC"></a>
+                    <div class="intro">
+                        <h2>Calculadora IMC</h2>
+                        <p>Calculadora que calcula o índice de massa corporal.</p>
+                    </div>
+                </div>
+                <div class="card item-2">
+                    <a href="https://feehrosa21.github.io/clockanddate/"><img src="img/projetos/dataehora.jpg"
+                            alt="Data e Hora"></a>
+                    <div class="intro">
+                        <h2>Data e Hora</h2>
+                        <p>Data e hora dinâmico que altera o fundo de acordo com o horário.</p>
+                    </div>
+                </div>
+                <div class="card item-3">
+                    <a href="https://feehrosa21.github.io/tabuada/"><img src="img/projetos/tabuada.jpg" alt="Tabuada"></a>
+                    <div class="intro">
+                        <h2>Tabuada</h2>
+                        <p>Tabuada dinâmica que altera o modo de acordo com a escolha do usuário.</p>
+                    </div>
+                </div>
+                <div class="card item-4">
+                    <a href="https://feehrosa21.github.io/temporizador/"><img src="img/projetos/temporizador.jpg"
+                            alt="Temporizador"></a>
+                    <div class="intro">
+                        <h2>Temporizador</h2>
+                        <p>Cronômetro funcional.</p>
+                    </div>
+                </div>
+                <div class="card item-5">
+                    <a href="https://feehrosa21.github.io/signos/"><img src="img/projetos/signo.jpg" alt="Signos"></a>
+                    <div class="intro">
+                        <h2>Signos</h2>
+                        <p>Projeto de signos dinâmico.</p>
+                    </div>
+                </div>
+                <div class="card item-5">
+                    <a href="https://feehrosa21.github.io/calculadora/"><img src="img/projetos/calculadora.png"
+                            alt="Calculadora"></a>
+                    <div class="intro">
+                        <h2>Calculadora</h2>
+                        <p>Projeto de calculadora funcional.</p>
+                    </div>
+                </div>
+            </div>
+            </div><!-- final da id tab2 -->
+        </section>
+
+
+        <section class="tab" id="tab3">
+            <div class="tab-container">
+                <div class="card item-1">
+                    <a href="https://feehrosa21.github.io/ecorecycling/"><img src="img/projetos/ecorecycling.jpg"
+                            alt="Eco Recycling"></a>
+                    <div class="intro">
+                        <h2>Eco Recycling</h2>
+                        <p>Site produzido em grupo, com o objetivo de conscientizar as pessoas da importância da
+                            reciclagem para o meio ambiente.</p>
+                    </div>
+                </div>
+                <div class="card item-2">
+                    <a href="https://feehrosa21.github.io/projetomagento/"><img src="img/projetos/magento.jpg"
+                            alt="Magento"></a>
+                    <div class="intro">
+                        <h2>Magento</h2>
+                        <p>Site produzido em dupla, sobre a plataforma Magento.</p>
+                    </div>
+                </div>
+                <div class="card item-3">
+                    <a href="https://feehrosa21.github.io/mundodoaprendizado/"><img src="img/projetos/mundo.jpg"
+                            alt="Mundo do Aprendizado"></a>
+                    <div class="intro">
+                        <h2>Mundo do Aprendizado</h2>
+                        <p>Projeto desenvolvido em grupo, um site didático informativo.</p>
+                    </div>
+                </div>
+            </div><!-- final da id tab3 -->
+        </section>
+
+        <section class="tab" id="tab4">
+            <div class="tab-container">
+                <div class="card item-1">
+                    <a href="https://regioesdobrasil.feehrosa21.repl.co/"><img src="img/projetos/regioesdobrasil.jpg"
+                            alt="Regiões do Brasil"></a>
+                    <div class="intro">
+                        <h2>Regiões do Brasil</h2>
+                        <p>Um pouco sobre as regiões do Brasil.</p>
+                    </div>
+                </div>
+                <div class="card item-2">
+                    <a href="https://feehrosa21.github.io/bootstrap/"><img src="img/projetos/bootstrap.jpg" alt="Bootstrap"></a>
+                    <div class="intro">
+                        <h2>Conhecendo Bootstrap</h2>
+                        <p>Site conhecendo o bootstrap.</p>
+                    </div>
+                </div>
+                <div class="card item-3">
+                    <a href="https://feehrosa21.github.io/futurodaslinguagens/"><img
+                            src="img/projetos/futurodaslinguagens.jpg" alt="Futuro das Linguagens"></a>
+                    <div class="intro">
+                        <h2>Futuro das Linguagens</h2>
+                        <p>Site de pesquisa sobre como será o futuro das linguagens.</p>
+                    </div>
+                </div>
+            </div><!-- final da id tab4 -->
+        </section>
+
+        <section>
+            <div class="contato">
+                <h3>Para mais informações entre em contato</h3>
+                <a href="mailto:nandagr425@gmail.com"><i class='bx bx-envelope' id="email"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-footer">
+            <div class="contato-footer">
+                <a href="https://www.instagram.com/feehrosa21/" id="contatos">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/fernanda-rosa21" id="contatos">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+
+                <a href="https://github.com/feehrosa21" id="contatos">
+                    <i class='bx bxl-github'></i>
+                </a>
+
+                <a href="mailto:nandagr425@gmail.com">
+                    <i class='bx bx-envelope' id="contatos"></i>
+                </a>
+            </div>
+
+            <div class="topo">
+                <a href="#home"><i class='bx bxs-chevron-up' id="topo"></i></a> <!-- botão ir para o topo -->
+            </div>
+        </div>
+        <div class="copy">
+            <h6> &#169 2023 Site criado por Fernanda Rosa. </h6>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

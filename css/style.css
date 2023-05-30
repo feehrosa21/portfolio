@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'qi';
+    src: url('../font/Quirk.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'sweet';
+    src: url('../font/Cyrene+Regular+Advanced.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+@keyframes surgir{
+    from {margin-left: -12rem;}
+    to {margin-left: -2rem;}
+}
+
+@keyframes circle{
+    from {clip-path: circle(600px at right 0px);}
+    to {clip-path: circle(600px at right 700px);}
+}
+
+*{
+    margin: 0;
+    padding: 0; 
+    text-decoration: none;
+    list-style: none; 
+    box-sizing: border-box;
+}
+
+:root{
+    --color-fundo:#F9F4EE;
+    --color-primary:#ac6433;
+    --color-secundary:#4A2A15;
+    --color-green-1:#76704c;
+    --color-green-2:#495b2f;
+    --color-green-3:#918B6B;
+    --color-green-4:#98A682;
+    --color-green-5:#545e45;
+    --color-icon-h:#efdcac;
+    --color-port:#E6D7C4;
+    --color-basic:#000;
+}
+.dark-mode{
+    --color-fundo:#22201d;
+    --color-primary:#ac6433;
+    --color-secundary:#efdcac;
+    --color-green-1:#76704c;
+    --color-green-2:#efdcac;
+    --color-green-3:#918B6B;
+    --color-green-4:#98A682;
+    --color-green-5:#545e45;
+    --color-icon-h:#efdcac;
+    --color-port:#918B6B;
+    --color-basic:#fff;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--color-fundo);
+    font-family: 'Lora', sans-serif;
+}
+
+ /* inicio home */
+.container-home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-home{
+    position: relative;
+    max-width: 500px;
+}
+
+.home .img-home{
+    width: 400px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    margin-top: 20px;  
+   
+}
+.img-home img{
+    max-width: 480px; 
+}
+
+.flor{
+    position: absolute;
+    left: 40rem;
+    top: -0.4rem;
+    transform: rotate(260deg);
+}
+.flor img{
+    width: 15rem;
+    
+}
+.home h2{   
+    text-align: left;
+    margin-bottom: 2rem; 
+    font-weight: 600;
+    word-spacing: 9px;
+    font-size: 2rem;
+    color: var(--color-secundary);
+}
+.home span{ 
+    font-family: 'sweet', sans-serif;
+    color: var(--color-primary);
+    letter-spacing: 6px;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: 5rem;
+}
+.home .text-home{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+.home .text-home p{
+    font-size: 1.2rem;
+    color: var(--color-green-2);
+    font-weight: 550;
+    text-align: left;
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-green-3);
+    clip-path: circle(600px at right 700px);
+    animation-name: circle;
+    animation-duration: 2s;
+}
+.nav-icon{
+    display: flex;
+    gap: 1rem;
+}
+#redes{
+    padding: 1rem;
+    color: var(--color-primary);
+}
+.nav-icon a{
+    font-size: 2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+.nav-icon a:hover{
+    scale: 1.2;
+}
+ .canto-superior{
+    position: absolute;
+    z-index: -2;
+    transform: rotate(29deg);
+    top: -14rem;
+    left: -8rem;
+} 
+ /* final home */
+
+.name, .h2, #icon-h, .h3, .h4, .img-port{
+    visibility: hidden;
+}
+
+
+@media (max-width: 778px) {
+    .circle{
+        top: 29rem;
+        height: 38rem;
+    }
+    .home{
+        display: flex;
+        flex-direction: column;
+    }
+    .home .img-home{
+        margin-left: 4rem;
+        margin-top: -1rem;
+    }
+    .home img{
+        margin-top: 2rem;
+    }
+    .home .text-home{
+        margin-top: 8rem;
+        width: 25rem;
+    }
+    .flor{
+       position: absolute;
+       left: -9rem;
+       top: 26rem;
+       transform: rotate(256deg);
+    }
+}

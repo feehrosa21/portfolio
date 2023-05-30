@@ -1,0 +1,104 @@
+header{
+    background-color: var(--color-fundo);
+    box-shadow: 0 0.1rem 0.2rem  var( --color-primary);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    padding: 18px;
+    width: 100%;
+    transition: all 0.5s;
+}
+.navigation .logo{
+    font-family: 'qi', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 20;
+    margin: 0rem 2rem 0rem 2rem;
+    letter-spacing: 4px;
+    color: var(--color-primary);
+}
+.navigation ul{
+    display: flex;
+    flex: 1;
+    justify-content: end;
+    gap: 1rem;
+}
+.navigation ul li a{
+    color: var( --color-secundary);
+    font-size: 1.2rem;
+    padding: 1rem;
+    transition: all 0.3s;
+}
+.navigation ul li a:hover{
+    color: #8d8862;
+}
+
+#mode{
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--color-basic);
+}
+
+.menu{
+    cursor: pointer;
+    padding: 1rem;
+    display: none;
+}
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: var(--color-basic);
+    margin: 6px auto;
+    transition: all 0.3s;
+}
+
+@media (max-width: 778px) {
+    .navigation{
+        padding: 18px 20px;
+    }
+    .navigation ul{
+        display: flex;
+        justify-content: center;
+        gap: 8rem;
+    }
+    .menu{
+        display: block;
+      
+    }
+    .menu.ativo .bar:nth-child(1){
+        position: absolute;
+        z-index: 2;
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menu.ativo .bar:nth-child(2){
+        opacity: 0;
+    }
+    .menu.ativo .bar:nth-child(3){
+        position: absolute;
+        z-index: 2;
+        transform: translateY(-8px) rotate(-45deg);
+        
+    }
+    .nav-menu{
+        position: fixed;
+        z-index: 2;
+        right: -100%;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        flex-direction: column;
+        text-align: center;
+        background-color: var(--color-fundo);
+        transition: 0.3s;
+    }
+    .nav-menu.ativo{
+        right: 0;
+    }
+}
