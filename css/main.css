@@ -301,12 +301,12 @@ section .sobre{
 }
 .text-sobre{
    width: 22rem;
-   margin-top: -4rem;
+   margin-top: -8rem;
    margin-bottom: 6rem;
    margin-left: .6rem;
 }
 .foto{
-    top: 110rem;
+    top: 100rem;
     left: 2rem;
 }
 
