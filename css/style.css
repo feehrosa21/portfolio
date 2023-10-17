@@ -14,7 +14,7 @@
     font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 
 @keyframes surgir{
@@ -27,6 +27,11 @@
     to {clip-path: circle(600px at right 700px);}
 }
 
+@keyframes surgir-direita{
+    from {margin-right: 8rem;}
+    to {margin-right: 0;}
+}
+
 *{
     margin: 0;
     padding: 0; 
@@ -37,6 +42,7 @@
 
 :root{
     --color-fundo:#F9F4EE;
+    --color-title: #495b2f;
     --color-primary:#ac6433;
     --color-secundary:#4A2A15;
     --color-green-1:#76704c;
@@ -45,20 +51,15 @@
     --color-green-4:#98A682;
     --color-green-5:#545e45;
     --color-icon-h:#efdcac;
-    --color-port:#E6D7C4;
+    --color-menu: #ac6433;
     --color-basic:#000;
 }
 .dark-mode{
     --color-fundo:#22201d;
-    --color-primary:#ac6433;
+    --color-title: #ac6433;
     --color-secundary:#efdcac;
-    --color-green-1:#76704c;
     --color-green-2:#efdcac;
-    --color-green-3:#918B6B;
-    --color-green-4:#98A682;
-    --color-green-5:#545e45;
-    --color-icon-h:#efdcac;
-    --color-port:#918B6B;
+    --color-menu: #76704c;
     --color-basic:#fff;
 }
 html {
@@ -67,7 +68,8 @@ html {
 
 body{
     background-color: var(--color-fundo);
-    font-family: 'Lora', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
 
  /* inicio home */
@@ -92,6 +94,9 @@ body{
 .text-home{
     position: relative;
     max-width: 500px;
+    text-align: left;
+    margin-top: 2rem;
+    font-size: 1.2rem;
 }
 
 .home .img-home{
@@ -106,44 +111,35 @@ body{
     max-width: 480px; 
 }
 
-.flor{
-    position: absolute;
-    left: 40rem;
-    top: -0.4rem;
-    transform: rotate(260deg);
-}
-.flor img{
-    width: 15rem;
-    
-}
 .home h2{   
     text-align: left;
-    margin-bottom: 2rem; 
+    margin-bottom: 2.4rem; 
     font-weight: 600;
     word-spacing: 9px;
     font-size: 2rem;
+    width: 40rem;
     color: var(--color-secundary);
 }
-.home span{ 
+.home h2 span{ 
     font-family: 'sweet', sans-serif;
     color: var(--color-primary);
     letter-spacing: 6px;
-    font-size: 2rem;
-    font-weight: 700;
-    margin-left: 5rem;
-}
-.home .text-home{
-    margin-top: 2rem;
-    margin-left: 2rem;
-    text-align: justify;
-    font-size: 1.2rem;
+    font-size: 2.4rem;
+    font-weight: 800;
 }
 .home .text-home p{
     font-size: 1.2rem;
-    color: var(--color-green-2);
+    color: var(--color-secundary);
     font-weight: 550;
     text-align: left;
 }
+
+#asterisco{
+    color: #918B6B;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
 .circle{
     position: absolute;
     top: 0;
@@ -158,6 +154,7 @@ body{
 .nav-icon{
     display: flex;
     gap: 1rem;
+    align-items: left;
 }
 #redes{
     padding: 1rem;
@@ -166,7 +163,6 @@ body{
 .nav-icon a{
     font-size: 2rem;
     margin-top: 1rem;
-    text-align: center;
 }
 .nav-icon a:hover{
     scale: 1.2;
@@ -187,7 +183,7 @@ body{
 
 @media (max-width: 778px) {
     .circle{
-        top: 29rem;
+        top: 32rem;
         height: 38rem;
     }
     .home{
@@ -195,20 +191,21 @@ body{
         flex-direction: column;
     }
     .home .img-home{
-        margin-left: 4rem;
+        width: 320px;
+        margin-left: 5rem;
         margin-top: -1rem;
     }
     .home img{
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
     .home .text-home{
         margin-top: 8rem;
-        width: 25rem;
+        margin-left: 1rem;
+        width: 24rem;
     }
-    .flor{
-       position: absolute;
-       left: -9rem;
-       top: 26rem;
-       transform: rotate(256deg);
+
+    .home h2{
+        width: 26rem;
     }
+
 }

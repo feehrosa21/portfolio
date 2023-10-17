@@ -9,8 +9,9 @@
     <!-- site icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-straight/css/uicons-bold-straight.css'>
     <!-- biblioteca de recursos jQuery -->
-    <script src="js/jquery-3.7.0.min.js"></script> 
+    <script src="js/jquery-3.7.0.min.js"></script>
     <!-- efeito surgir -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <!-- css -->
@@ -27,9 +28,10 @@
         <nav class="navigation">
             <div class="logo">✿Fernanda Rosa</div>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#home" class="active">Home</a></li>
                 <li class="nav-item"><a href="#sobre">Sobre</a></li>
-                <li class="nav-item"><a href="#portifolio">Portfólio</a></li>
+                <li class="nav-item"><a href="#portfolio">Portfólio</a></li>
+                <li class="nav-item"><a href="#contato">Contato</a></li>
             </ul>
             <i class='bx bx-moon' id="mode"></i>
             </div>
@@ -54,18 +56,17 @@
         <section class="container-home" id="home">
             <div class="home">
                 <div class="text-home">
-                    <h2>Olá! Bem vindo(a) Eu sou<br><span class="name">Fernanda Rosa</span></h2>
-                    <p>Desenvolvedora Web e UX/UX Designer</p>
+                    <h2>Olá, bem vindo(a) ao meu portfólio! <br><br><span class="name">Fernanda Rosa</span></h2>
+                    <p><i class="fi fi-bs-medical-star" id="asterisco"></i> Desenvolvedora Web <i
+                            class="fi fi-bs-medical-star" id="asterisco"></i> UX/UI Designer</p>
                     <div class="nav-icon">
-                        <a href="https://www.instagram.com/feehrosa21/"><i class='bx bxl-instagram' id="redes"></i></a>
                         <a href="https://www.linkedin.com/in/fernanda-rosa21"><i class='bx bxl-linkedin'
                                 id="redes"></i></a>
+                        <a href="https://www.instagram.com/feehrosa21/"><i class='bx bxl-instagram' id="redes"></i></a>
                         <a href="https://github.com/feehrosa21"><i class='bx bxl-github' id="redes"></i></a>
                     </div>
                 </div>
-                <div class="flor">
-                    <img src="img/imgs/florhome.png" alt="flor home">
-                </div>
+
                 <div class="img-home">
                     <img src="img/imgs/fotohome.png" alt="Foto Fernanda Home">
                 </div>
@@ -73,7 +74,7 @@
 
         </section>
 
-        <article id="sobre">
+        <section id="sobre">
             <div class="sobre">
                 <span id="quadrado"></span>
                 <div class="foto">
@@ -81,86 +82,102 @@
                 </div>
 
                 <div class="text-sobre">
-                    <h2 class="h2">Sobre mim ✿</h2>
-                    <hr>
-                    <p>Eu sou a Fernanda Rosa e tenho 18 anos. Nasci e moro em Porto Alegre. Concluí o curso de Programação
-                        Web-Full Stack no Instituto de Oportunidade Social(IOS) e o curso de UX/UI DESIGN no
-                        Instituto Caldeira através do Programa Nova Geração. Sou uma pessoa muito dedicada e gosto de
-                        pensar em cada detalhe do que vou fazer. Sou a pessoa que gosta de estar conversando, com amigos
-                        e ler livros que me fazem refletir sobre a vida. Sou muito organizada e adoro aprender coisas novas.
+                    <h2>Sobre mim: ✿</h2>
+                    <p>Eu sou a Fernanda Rosa e tenho 19 anos. Nasci e moro em Porto Alegre-RS. Me formei no curso de
+                        Programação Web-Full Stack no Instituto da Oportunidade Social(IOS). Onde eu aprendi muito além
+                        de habilidades técnicas. Atualmente estou cursando Design de Interiores na faculdade. E também,
+                        estou estudando UX/UI Design através do Geração Caldeira no Instituto Caldeira. Sou uma pessoa
+                        muito dedicada e gosto de pensar em cada detalhe do que vou fazer.Sou muito organizada e adoro
+                        aprender coisas novas. Sou a pessoa que gosta de estar conversando, estar com amigos e ler
+                        livros que me fazem refletir sobre a vida. Eu tenho em mim de olhar sempre com mais empatia para
+                        as pessoas, me preocupo com a forma que cada um recebe as informações. Eu aproveito cada
+                        oportunidade que chega até mim com muita dedicação e esforço.
                     </p>
                 </div>
             </div>
-        </article>
+        </section>
 
         <section class="habilidades">
             <div class="icons-habilidades">
-                <div class="icon-icon"><i class='bx bx-bullseye' id="icon-h"></i>
+                <div class="icon-icon"><i class='bx bx-bullseye'></i>
                     <div class="text-icon">
                         <h4>Comprometimento</h4>
-                        <p>Sou muito comprometida e busco sempre tomar decisões responsáveis e com consciência.</p>
-                    </div>
-                </div>
-
-                <div class="icon-icon"><i class='bx bx-check' id="icon-h"></i>
-                    <div class="text-icon">
-                        <h4>Organização</h4>
-                        <p>Acredito que a organização é fundamental em todas as áreas da vida e adoro um planejamento.
+                        <p>Sou muito comprometida com tudo e busco sempre tomar decisões responsáveis e com consciência.
                         </p>
                     </div>
                 </div>
 
-                <div class="icon-icon"><i class='bx bx-bulb' id="icon-h"></i>
+                <div class="icon-icon"><i class='bx bx-check'></i>
+                    <div class="text-icon">
+                        <h4>Organização</h4>
+                        <p>Para mim a organização é fundamental em todas as áreas da minha vida. Adoro um planejamento.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="icon-icon"><i class='bx bx-bulb'></i>
                     <div class="text-icon">
                         <h4>Dedicação</h4>
-                        <p>Tenho em mim que com dedicação e esforço se vai longe. Por isso adoro pensar em cada detalhe
-                            dos meus projetos.</p>
+                        <p>Carrego comigo que a dedicação e o esforço de hoje determinam o futuro. Me dedico em cada
+                            detalhe.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="portifolio" id="portifolio">
+        <section class="portfolio" id="portfolio">
             <div class="titulo-port">
-                <h3 class="h3">Portfólio ✿</h3>
-                <hr>
+                <h3>Portfólio ✿</h3>
+                <p>Habilidades que eu desenvolvi ao longo da minha jornada. </p>
             </div>
 
             <div class="container-port">
-                <div class="port">
-                    <p>Confira alguns dos meus projetos desenvolvidos no curso de Programação Web Full Stack, no Instituto
-                        de Oportunidade Social(IOS). Os demais, você encontra no meu GitHub.</p>
-
-                    <h4>Habilidades em desenvolvimento</h4>
-                    <div class="icons-study">
-                        <i class='bx bxl-css3' id="icon-s"></i>
-                        <i class='bx bxl-html5' id="icon-s"></i>
-                        <i class='bx bxl-javascript' id="icon-s"></i>
-                        <i class='bx bxl-php' id="icon-s"></i>
-                        <i class="fi fi-brands-mysql" id="icon-s"></i>
-                        <span>UX/UI <br> Design</span>
+                <div class="box">
+                    <div class="text-box">
+                        <div class="icon-box"><i class='bx bx-code-alt'></i></div>
+                        <h4>Desenvolvedora Web</h4>
+                        <p>Me formei no curso de Programação Web Full Stack no Instituto da Oportunidade Social. Onde eu
+                            aprendi sobre lógica de programação e as linguagens como HTML, CSS, JavaScript, PHP e banco
+                            de dados. Foi onde eu me encantei pelo front-end.</p>
                     </div>
                 </div>
-                <div class="img-port">
-                    <img src="img//imgs/programador.png" alt="programador">
+                <div class="box">
+
+                    <div class="text-box">
+                        <div class="icon-box"><i class='bx bxl-figma'></i></div>
+                        <h4>UX/UI Design</h4>
+                        <p>Entrei para trilha de UX/UI Design no programa Nova Geração do Instituto Caldeira. Feita à
+                            distância na Alura. Na segunda etapa, 200 jovens selecionados ganharam uma bolsa de estudos
+                            e participam do Geração Caldeira, e eu faço parte dessa geração. </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="text-box">
+                        <div class="icon-box"><i class='bx bx-home'></i></div>
+                        <h4>Design de interiores</h4>
+                        <p>O meu amor por design só aumentou, então decidi me inscrever na faculdade de Design de
+                            Interiores. Estou fazendo na modalidade EAD, pela Unirriter. Atualmente estou no primeiro
+                            semestre, mas o sentimento é de empolgação com o que vem pela frente.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section>
+        <section id="portfolio">
             <div class="title-port">
                 <h4 class="h4">Conheça alguns dos meus projetos:</h4>
                 <hr>
             </div>
             <!-- inicio menu -->
-            <div class="menu-portifolio">
+            <nav class="menu-portfolio">
                 <ul>
-                    <li><a href="#tab1" class="link-a">HTML | CSS</a></li>
+                    <li><a href="#tab1" class="link-a active-port">HTML | CSS</a></li>
                     <li><a href="#tab2" class="link-a">JavaScript</a></li>
                     <li><a href="#tab3" class="link-a">Equipe</a></li>
                     <li><a href="#tab4" class="link-a">PHP | Bootstrap | Pesquisa</a></li>
+                    <li><a href="#tab5" class="link-a">UX/UI</a></li>
                 </ul>
-            </div> <!-- final menu -->
+            </nav> <!-- final menu -->
         </section>
 
         <section class="tab" id="tab1">
@@ -174,7 +191,8 @@
                     </div>
                 </div>
                 <div class="card item-2">
-                    <a href="https://feehrosa21.github.io/flexegrid/"><img src="img/projetos/flexegrid.jpg" alt="Flex e Grid"></a>
+                    <a href="https://feehrosa21.github.io/flexegrid/"><img src="img/projetos/flexegrid.jpg"
+                            alt="Flex e Grid"></a>
                     <div class="intro">
                         <h2>Galeria de Outer Banks</h2>
                         <p>Conheça um breve resumo sobre os personagens dessa série que eu gosto muito.</p>
@@ -189,7 +207,8 @@
                     </div>
                 </div>
                 <div class="card item-4">
-                    <a href="https://feehrosa21.github.io/cardapio/"><img src="img/projetos/cardapio.jpg" alt="Cardápio"></a>
+                    <a href="https://feehrosa21.github.io/cardapio/"><img src="img/projetos/cardapio.jpg"
+                            alt="Cardápio"></a>
                     <div class="intro">
                         <h2>Cardápio</h2>
                         <p>Um dos meus primeiros projetos, cardápio de um restaurante.</p>
@@ -226,7 +245,8 @@
                     </div>
                 </div>
                 <div class="card item-3">
-                    <a href="https://feehrosa21.github.io/tabuada/"><img src="img/projetos/tabuada.jpg" alt="Tabuada"></a>
+                    <a href="https://feehrosa21.github.io/tabuada/"><img src="img/projetos/tabuada.jpg"
+                            alt="Tabuada"></a>
                     <div class="intro">
                         <h2>Tabuada</h2>
                         <p>Tabuada dinâmica que altera o modo de acordo com a escolha do usuário.</p>
@@ -263,6 +283,15 @@
         <section class="tab" id="tab3">
             <div class="tab-container">
                 <div class="card item-1">
+                    <a href="https://crealize.contatocrealize.repl.co/"><img src="img/projetos/tcc.png"
+                            alt="Crealize-TCC"></a>
+                    <div class="intro">
+                        <h2>Crealize - TCC</h2>
+                        <p>Site produzido para o TCC, criamos uma empresa que cria sites de forma totalmente
+                            personalizada.</p>
+                    </div>
+                </div>
+                <div class="card item-2">
                     <a href="https://feehrosa21.github.io/ecorecycling/"><img src="img/projetos/ecorecycling.jpg"
                             alt="Eco Recycling"></a>
                     <div class="intro">
@@ -271,20 +300,12 @@
                             reciclagem para o meio ambiente.</p>
                     </div>
                 </div>
-                <div class="card item-2">
+                <div class="card item-3">
                     <a href="https://feehrosa21.github.io/projetomagento/"><img src="img/projetos/magento.jpg"
                             alt="Magento"></a>
                     <div class="intro">
                         <h2>Magento</h2>
                         <p>Site produzido em dupla, sobre a plataforma Magento.</p>
-                    </div>
-                </div>
-                <div class="card item-3">
-                    <a href="https://feehrosa21.github.io/mundodoaprendizado/"><img src="img/projetos/mundo.jpg"
-                            alt="Mundo do Aprendizado"></a>
-                    <div class="intro">
-                        <h2>Mundo do Aprendizado</h2>
-                        <p>Projeto desenvolvido em grupo, um site didático informativo.</p>
                     </div>
                 </div>
             </div><!-- final da id tab3 -->
@@ -301,7 +322,8 @@
                     </div>
                 </div>
                 <div class="card item-2">
-                    <a href="https://feehrosa21.github.io/bootstrap/"><img src="img/projetos/bootstrap.jpg" alt="Bootstrap"></a>
+                    <a href="https://feehrosa21.github.io/bootstrap/"><img src="img/projetos/bootstrap.jpg"
+                            alt="Bootstrap"></a>
                     <div class="intro">
                         <h2>Conhecendo Bootstrap</h2>
                         <p>Site conhecendo o bootstrap.</p>
@@ -318,20 +340,62 @@
             </div><!-- final da id tab4 -->
         </section>
 
-        <section>
-            <div class="contato">
-                <h3>Para mais informações entre em contato</h3>
-                <a href="mailto:nandagr425@gmail.com"><i class='bx bx-envelope' id="email"></i></a>
+        <section class="tab" id="tab5">
+            <div class="tab-container">
+                <div class="card item-1">
+                    <a href="#"><img src="img/projetos/em.png" alt="Regiões do Brasil"></a>
+                </div>
+                <div class="card item-1">
+                    <a href="#"><img src="img/projetos/breve.png" alt="Regiões do Brasil"></a>
+                </div>
+                <div class="card item-1">
+                    <a href="#"><img src="img/projetos/aqui.png" alt="Regiões do Brasil"></a>
+                </div>
             </div>
+        </section>
+
+        <!--form -->
+        <section class="contact" id="contato">
+            <div class="all-form">
+                <form action="https://api.staticforms.xyz/submit" method="post" class="form" onsubmit="showModal(event)"
+                    id="formulario">
+
+                    <input type="hidden" name="accessKey" value="83e2c643-bc3c-485b-a47f-58e29b2129a6">
+                    <input type="hidden" name="redirectTo" value="https://feehrosa21.github.io/portfolio/">
+
+                    <h2>Para mais informações, dúvidas e sugestões. Entre em contato!</h2>
+
+                    <div class="container-form">
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" class="form-input" placeholder=" " required>
+                            <label for="name" class="form-label">Nome:</label>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" class="form-input" placeholder=" " required>
+                            <label for="email" class="form-label">E-mail:</label>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea style="resize: none;" name="message" id="mensagem" class="form-input" rows="2"
+                                placeholder=" " required></textarea>
+                            <label for="mensagem" class="form-label">Mensagem:</label>
+                        </div>
+                        <br>
+                        <input type="submit" class="submit" value="Enviar">
+                    </div>
+                </form>
+                <div class="detalhe-form"></div>
+                <div class="img-form"></div>
         </section>
     </main>
 
     <footer>
         <div class="container-footer">
+            <div class="frase-footer">
+                <p>Obrigada por acessar meu portfólio. Espero que tenha gostado! :)</p>
+            </div>
             <div class="contato-footer">
-                <a href="https://www.instagram.com/feehrosa21/" id="contatos">
-                    <i class='bx bxl-instagram'></i>
-                </a>
 
                 <a href="https://www.linkedin.com/in/fernanda-rosa21" id="contatos">
                     <i class='bx bxl-linkedin'></i>
@@ -341,19 +405,38 @@
                     <i class='bx bxl-github'></i>
                 </a>
 
+                <a href="https://www.instagram.com/feehrosa21/" id="contatos">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+
                 <a href="mailto:nandagr425@gmail.com">
                     <i class='bx bx-envelope' id="contatos"></i>
                 </a>
             </div>
 
             <div class="topo">
-                <a href="#home"><i class='bx bxs-chevron-up' id="topo"></i></a> <!-- botão ir para o topo -->
+                <a href="#home"><span>Voltar ao topo<i class='bx bxs-chevrons-up'></i></span></a>
+                <!-- botão ir para o topo -->
             </div>
         </div>
         <div class="copy">
-            <h6> &#169 2023 Site criado por Fernanda Rosa. </h6>
+            <h6> &#169 2023 | Site criado por Fernanda Rosa. </h6>
         </div>
     </footer>
+
+    <script>
+        function showModal(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+            var modal = document.createElement("div");
+            modal.classList.add("modal");
+            modal.innerHTML = "<p>Recebi a sua mensagem, obrigada!</p>";
+            document.body.appendChild(modal);
+            setTimeout(function () {
+                modal.style.display = "none";
+                document.querySelector(".form").submit(); // Envia o formulário após exibir o modal
+            }, 2000); // Tempo em milissegundos (2 segundos neste exemplo)
+        }
+    </script>
 
     <script src="js/script.js"></script>
 </body>
