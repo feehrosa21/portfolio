@@ -295,7 +295,7 @@ section .sobre{
 section .sobre{
     display: flex;
     flex-direction: column-reverse;
-    height: 120vh;
+    height: 140vh;
     margin-bottom: 2rem;
     margin-top: -4rem; 
 }
